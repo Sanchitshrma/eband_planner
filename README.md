@@ -126,7 +126,3 @@ Adjust the planner parameters based on your specific requirements:
 - Multi-objective optimization (time, smoothness, safety)
 - Integration with ROS (Robot Operating System)
 - Visualization tools for path planning analysis
-
-## License
-
-This project is open source and available under the MIT License.
