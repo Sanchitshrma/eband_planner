@@ -52,14 +52,14 @@ Demo application showing the planner in action
 
 ```java
 // Create initial path as a series of bubbles
-List<Bubble> path = new ArrayList<>();
+List<Bubble> path = new ArrayList<>(); // Bubble(double x, double y, double radius)
 for (int i = 0; i <= 10; i++) {
     path.add(new Bubble(50 + i * 70, 300, 10));
 }
 
 // Add moving obstacles
 List<Obstacle> obstacles = new ArrayList<>();
-obstacles.add(new Obstacle(400, 300, 0, -20, 40, 40));
+obstacles.add(new Obstacle(400, 300, 0, -20, 40, 40)); // Obstacle(double x, double y, double vx, double vy, double width, double height)
 
 // Initialize planner
 ElasticBandPlanner planner = new ElasticBandPlanner(path, obstacles);
