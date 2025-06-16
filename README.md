@@ -21,10 +21,23 @@ The Elastic Band Planner creates a flexible path that can dynamically adapt to m
 
 ### Core Classes
 
-- **`Bubble`**: Represents a point on the path with position, radius, and force accumulation
-- **`Obstacle`**: Moving rectangular obstacles with position, velocity, and dimensions
-- **`ElasticBandPlanner`**: Main algorithm implementation with force calculations
-- **`Main`**: Demo application showing the planner in action
+#### `Bubble`
+Represents a point on the path with the following parameters:
+- `x, y`: Position coordinates in the 2D plane
+- `radius`: Size of the bubble (affects collision detection)
+- `fx, fy`: Accumulated force components for position updates
+
+#### `Obstacle`
+Moving rectangular obstacles with the following parameters:
+- `x, y`: Current position coordinates
+- `vx, vy`: Velocity components (pixels/second)
+- `width, height`: Dimensions of the rectangular obstacle
+
+#### `ElasticBandPlanner`
+Main algorithm implementation with force calculations
+
+#### `Main`
+Demo application showing the planner in action
 
 ### Key Parameters
 
